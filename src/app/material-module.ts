@@ -74,6 +74,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatRadioModule,
+    MatNativeDateModule,
     MatRippleModule,
     MatSelectModule,
     MatSidenavModule,

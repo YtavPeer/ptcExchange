@@ -13,6 +13,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoMaterialModule } from './material-module';
 import { CurrencyTableComponent } from './pages/currency-table/currency-table.component';
 
+
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +28,9 @@ import { CurrencyTableComponent } from './pages/currency-table/currency-table.co
     CurrencyTableComponent,
   ],
   imports: [
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     DemoMaterialModule,
@@ -36,3 +45,4 @@ import { CurrencyTableComponent } from './pages/currency-table/currency-table.co
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);
